@@ -1,3 +1,29 @@
+// main page
+$(document).ready(function() {
+  $('nav ul li a').click(function() {
+    $('nav ul li a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('a[href^="#"]').click(function(event) {
+    event.preventDefault();
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+
+  $('button:first-of-type').click(function() {
+    alert("Please login to access the Fitness Tracker.");
+  });
+
+  $('button:last-of-type').click(function() {
+    alert("Sign-up to create an account and start tracking your fitness.");
+  });
+});
+
 //time and date realtime
 $(document).ready(function() {
     function updateTime() {
@@ -137,3 +163,7 @@ $(document).ready(function() {
       $(this).parent().remove();
     });
   });
+
+
+
+  
