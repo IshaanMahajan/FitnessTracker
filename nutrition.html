@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/logo.jpg" type=“image/x-icon”>
+  <title>Nutrition Tracking</title>
+</head>
+
+<body>
+  <nav>
+    <h2 class="left">
+      <img src="images/logo.jpg" alt="">Ishaan&nbsp<span> Fitness Tracker</span>
+    </h2>
+    <ul>
+      <li><a href="#" onclick="window.open('index.html','_self')">Home</a></li>
+      <li><a href="#dashboard" onclick="window.open('index.html','_self')">Dashboard</a></li>
+      <li><a href="#" onclick="window.open('Pre-designed.html')">Pre-designed Plans</a></li>
+      <li><a href="#" onclick="window.open('nutrition.html')">Nutrition Tracking</a></li>
+      <li><a href="#" onclick="window.open('challenges.html')">Challenges</a></li>
+      <li><a href="#" onclick="window.open('contact-us.html','_self')">Contact Us</a></li>
+    </ul>
+    <div class="right">
+      <button onclick="window.open('login.html','_self')">Login</button>
+      <button onclick="window.open('signup.html','_self')">Sign-up</button>
+    </div>
+  </nav>
+
+  <div class="nutri-background">
+
+    <section class="nutrition-tracking">
+      <h2>Nutrition Tracking</h2>
+      <div class="nutrition-form">
+        <h3>Your Daily Intake</h3>
+        <form>
+          <label for="food-name">Food Name:</label>
+          <input type="text" id="food-name">
+
+          <label for="calories">Calories:</label>
+          <input type="number" id="calories">
+
+          <label for="protein">Protein:</label>
+          <input type="number" id="protein">
+
+          <label for="carbs">Carbs:</label>
+          <input type="number" id="carbs">
+
+          <label for="fat">Fat:</label>
+          <input type="number" id="fat">
+
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>2023 Ishaan Fitness Tracker. All rights reserved.<br>Made by Ishaan Mahajan</p>
+  </footer>
+</body>
+
+</html>

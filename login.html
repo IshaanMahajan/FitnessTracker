@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="images/logo.jpg" type=“image/x-icon”>
+  <title>Fitness Tracker - Login</title>
+</head>
+
+<body>
+  <nav>
+    <h2 class="left">
+      <img src="images/logo.jpg" alt="">Ishaan&nbsp<span> Fitness Tracker</span>
+    </h2>
+    <ul>
+      <li><a href="#" onclick="window.open('index.html','_self')">Home</a></li>
+      <li><a href="#dashboard" onclick="window.open('index.html','_self')">Dashboard</a></li>
+      <li><a href="#" onclick="window.open('Pre-designed.html')">Pre-designed Plans</a></li>
+      <li><a href="#" onclick="window.open('nutrition.html')">Nutrition Tracking</a></li>
+      <li><a href="#" onclick="window.open('challenges.html')">Challenges</a></li>
+      <li><a href="#" onclick="window.open('contact-us.html','_self')">Contact Us</a></li>
+    </ul>
+    <div class="right">
+      <button onclick="window.open('login.html','_self')">Login</button>
+      <button onclick="window.open('signup.html','_self')">Sign-up</button>
+    </div>
+  </nav>
+  <div class="centered-page">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <div class="password-field">
+          <input id="password" type="password" placeholder="Password" required>
+          <i id="toggle-password" class="fa fa-eye"></i>
+        </div>
+        <button type="submit" onclick="showAlertLogin()">Login</button>
+      </form>
+      <p class="forgot-password">Forgot your password? <a href="reset-password.html">Reset here</a></p>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>2023 Ishaan Fitness Tracker. All rights reserved.<br>Made by Ishaan Mahajan</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="images/logo.jpg" type=“image/x-icon”>
+  <title>Ishaan Fitness Tracker</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <h2 class="left">
+        <img src="images/logo.jpg" alt="">Ishaan&nbsp<span> Fitness Tracker</span>
+      </h2>
+
+      <ul>
+        <li><a href="#" onclick="window.open('index.html','_self')">Home</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#" onclick="window.open('Pre-designed.html')">Pre-designed Plans</a></li>
+        <li><a href="#" onclick="window.open('nutrition.html')">Nutrition Tracking</a></li>
+        <li><a href="#" onclick="window.open('challenges.html')">Challenges</a></li>
+        <li><a href="#" onclick="window.open('contact-us.html','_self')">Contact Us</a></li>
+      </ul>
+      <div class="right">
+        <button onclick="window.open('login.html','_self')" style="width: 100px; ">Login</button>
+        <button onclick="window.open('signup.html','_self')" style="width: 100px;">Sign-up</button>
+      </div>
+      <div class="text-box">
+        <h1>Welcome to our Fitness Tracker!!!</h1>
+        <h4>Our fitness tracker is a comprehensive tool designed to help you <br>achieve your fitness goals and maintain
+          a healthy lifestyle.<br> Whether you're a beginner or a fitness enthusiast, our tracker provides<br> a range
+          of features to assist you on your fitness journey.</h4>
+      </div>
+    </nav>
+  </div>
+
+  <div>
+    <div class="clock" style="color: red;">
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+      <span id="period">AM</span>
+      <div id="date"></div>
+    </div>
+  </div>
+  
+  
+  <section id="dashboard" class="dashboard">
+    <h2 class="rainbowdash" style="padding-top: 1px;">Personalized Dashboard</h2>
+    <div class="statistics">
+      <h3 style="text-align: center; font-weight: bolder; font-size: x-large; background-color: black;
+      color: white;padding: 10px;">Fitness Statistics</h3>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Steps</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>Calories Burned</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Distance</td>
+          <td>5 km</td>
+        </tr>
+        <tr>
+          <td>Heart Rate</td>
+          <td>120 bpm</td>
+        </tr>
+      </table>
+    </div>
+    <div class="goals" style="padding-top: 50px;">
+      <h3 style="text-align: center; font-weight: bolder; font-size: x-large; background-color: black;
+      color: white;padding: 10px;">Fitness Goals</h3>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Goal</th>
+        </tr>
+        <tr>
+          <td>Steps Goal</td>
+          <td>12,000</td>
+        </tr>
+        <tr>
+          <td>Calories Goal</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Distance Goal</td>
+          <td>8 km</td>
+        </tr>
+        <tr>
+          <td>Heart Rate Goal</td>
+          <td>110 bpm</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  
+  <section class="fitness-activities">
+    <h2>Your Fitness Activities</h2>
+    <div class="activity">
+      <h3>Running</h3>
+      <p>Distance: <span>5 km</span></p>
+      <p>Duration: <span>30 minutes</span></p>
+      <p>Calories Burned: <span>300</span></p>
+      <label for="running-distance">Enter Distance (in km):</label>
+      <input type="number" id="running-distance">
+      <label for="running-duration">Enter Duration (in minutes):</label>
+      <input type="number" id="running-duration">
+      <label for="running-calories">Enter Calories Burned:</label>
+      <input type="number" id="running-calories">
+      <button type="submit">Add</button>
+    </div>
+    <div class="activity">
+      <h3>Cycling</h3>
+      <p>Distance: <span>10 km</span></p>
+      <p>Duration: <span>45 minutes</span></p>
+      <p>Calories Burned: <span>500</span></p>
+      <label for="cycling-distance">Enter Distance (in km):</label>
+      <input type="number" id="cycling-distance">
+      <label for="cycling-duration">Enter Duration (in minutes):</label>
+      <input type="number" id="cycling-duration">
+      <label for="cycling-calories">Enter Calories Burned:</label>
+      <input type="number" id="cycling-calories">
+      <button type="submit">Add</button>
+    </div>
+    
+    <div class="activity">
+      <h3>Weightlifting</h3>
+      <p>Sets: <span>3</span></p>
+      <p>Reps: <span>10</span></p>
+      <p>Weight: <span>50 kg</span></p>
+      <label for="weightlifting-sets">Enter Sets:</label>
+      <input type="number" id="weightlifting-sets">
+      <label for="weightlifting-reps">Enter Reps:</label>
+      <input type="number" id="weightlifting-reps">
+      <label for="weightlifting-weight">Enter Weight (in kg):</label>
+      <input type="number" id="weightlifting-weight">
+      <button type="submit">Add</button>
+    </div>
+  </section>
+
+  <section class="todo-list">
+    <h2 class="todo-title" style="color: red;">To do Exercise Today</h2>
+    <div class="input-container">
+      <input type="text" id="new-todo" placeholder="Enter a new task">
+      <button id="add-todo">Add</button>
+    </div>
+    <ul id="todo-items"></ul>
+  </section>
+  
+
+  <div class="container1">
+    <h1>About Us</h1>
+    <p>A fitness tracker is an application that helps individuals monitor and track their health and fitness-related data. It typically includes features like step counting, calorie tracking, and heart rate monitoring.</p>
+    <p id="myParagraph">Fitness trackers provide real-time feedback, allowing users to set and achieve their fitness goals. They offer insights into daily activity levels, exercise patterns, and overall progress. With the advancement of technology, fitness trackers have become popular tools for promoting an active and healthy lifestyle.</p>
+    <button id="toggleButton" style="background-color: red;">Show</button>
+  </div>
+  
+  <footer>
+    <p>2023 Ishaan Fitness Tracker. All rights reserved.<br>Made by Ishaan Mahajan</p>
+  </footer>
+</body>
+
+</html>
