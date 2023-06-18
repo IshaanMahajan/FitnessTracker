@@ -14,14 +14,6 @@ $(document).ready(function() {
       }, 1000);
     }
   });
-
-  $('button:first-of-type').click(function() {
-    alert("Please login to access the Fitness Tracker.");
-  });
-
-  $('button:last-of-type').click(function() {
-    alert("Sign-up to create an account and start tracking your fitness.");
-  });
 });
 
 //time and date realtime
