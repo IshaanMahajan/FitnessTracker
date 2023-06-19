@@ -77,17 +77,17 @@ $(document).ready(function() {
 //     return false;
 //   });
 
-  // Weightlifting
-  $('#weightlifting-submit').on('click', function() {
-    var sets = $('#weightlifting-sets-input').val();
-    var reps = $('#weightlifting-reps-input').val();
-    var weight = $('#weightlifting-weight-input').val();
+//   // Weightlifting
+//   $('#weightlifting-submit').on('click', function() {
+//     var sets = $('#weightlifting-sets-input').val();
+//     var reps = $('#weightlifting-reps-input').val();
+//     var weight = $('#weightlifting-weight-input').val();
 
-    $('#weightlifting-sets').text(sets);
-    $('#weightlifting-reps').text(reps);
-    $('#weightlifting-weight').text(weight + ' kg');
+//     $('#weightlifting-sets').text(sets);
+//     $('#weightlifting-reps').text(reps);
+//     $('#weightlifting-weight').text(weight + ' kg');
 
-    return false;
+//     return false;
 
   //show/hide
   $(document).ready(function() {
