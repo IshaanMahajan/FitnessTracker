@@ -51,31 +51,31 @@ $(document).ready(function() {
     setInterval(updateTime, 1000);
   });
 
-// Running
-  $('#running-submit').on('click', function() {
-    var distance = $('#running-distance-input').val();
-    var duration = $('#running-duration-input').val();
-    var calories = $('#running-calories-input').val();
+// // Running
+//   $('#running-submit').on('click', function() {
+//     var distance = $('#running-distance-input').val();
+//     var duration = $('#running-duration-input').val();
+//     var calories = $('#running-calories-input').val();
 
-    $('#running-distance').text(distance + ' km');
-    $('#running-duration').text(duration + ' minutes');
-    $('#running-calories').text(calories);
+//     $('#running-distance').text(distance + ' km');
+//     $('#running-duration').text(duration + ' minutes');
+//     $('#running-calories').text(calories);
 
-    return false;
-  });
+//     return false;
+//   });
 
-  // Cycling
-  $('#cycling-submit').on('click', function() {
-    var distance = $('#cycling-distance-input').val();
-    var duration = $('#cycling-duration-input').val();
-    var calories = $('#cycling-calories-input').val();
+//   // Cycling
+//   $('#cycling-submit').on('click', function() {
+//     var distance = $('#cycling-distance-input').val();
+//     var duration = $('#cycling-duration-input').val();
+//     var calories = $('#cycling-calories-input').val();
 
-    $('#cycling-distance').text(distance + ' km');
-    $('#cycling-duration').text(duration + ' minutes');
-    $('#cycling-calories').text(calories);
+//     $('#cycling-distance').text(distance + ' km');
+//     $('#cycling-duration').text(duration + ' minutes');
+//     $('#cycling-calories').text(calories);
 
-    return false;
-  });
+//     return false;
+//   });
 
   // Weightlifting
   $('#weightlifting-submit').on('click', function() {
